@@ -37,9 +37,19 @@ public class Solution {
                 high=mid-1;
             }
         }
+
         return low;
     }
     public static void main(String[] args) {
         
+        ArrayList<Integer> arr = new ArrayList<>();
+        arr.add(12);
+        arr.add(34);
+        arr.add(67);
+        arr.add(90);
+        int n = arr.size();
+        int m = 2; // Number of students
+        int result = BookAllocation(arr, n, m);
+        System.out.println("Minimum number of pages: " + result); // Output: 113
     }
 }
