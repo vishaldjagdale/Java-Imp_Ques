@@ -1,7 +1,6 @@
-    import java.util.*;
+import java.util.*;
 
 public class NGE {
-
 
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
         int n = nums2.length;
@@ -25,13 +24,12 @@ public class NGE {
 
         return result;
     }
+
     public static void main(String[] args) {
         NGE nge = new NGE();
-        int[] nums1 = {4, 1, 2};
-        int[] nums2 = {1, 3, 4, 2};
+        int[] nums1 = {  1, 2 };
+        int[] nums2 = { 4, 3, 4, 2 };
         int[] result = nge.nextGreaterElement(nums1, nums2);
         System.out.println(Arrays.toString(result)); // Output: [-1, 3, -1]
     }
 }
-
-
