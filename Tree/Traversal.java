@@ -67,8 +67,6 @@ class Traversal {
         root.right = new Node(22);
         root.right.right = new Node(25);
         ArrayList<Integer> res = tree.boundaryTraversal(root);
-        for (int i : res) {
-            System.out.print(i + " ");
-        }
+        
     }
 }
